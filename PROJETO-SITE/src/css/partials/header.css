@@ -1,0 +1,16 @@
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--cor-header);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1.5px var(--cor-preto);
+    position: fixed;
+    z-index: 100;
+  }
+
+  .header-logo img {
+    width: 20vh;
+    height: 15vh;
+  }

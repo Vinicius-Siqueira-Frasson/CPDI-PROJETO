@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@1,500&display=swap');
+
+#imagens{
+    width: 100%;
+    padding: 200px 10%;
+    background-image: url(../../image/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(min-width: 1800px) {
+    #imagens{
+        background-image: url(../../image/fundo.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+}
+
+
+
+@media(min-height:1800px) {
+    .jogador div {
+        scale: 1.5;
+        height: 50%;
+        width: 1500px;
+    }
+}
+
+
+@media(min-height: 1800px) {
+    .project div{
+        height: 100vh;
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
+.bloco-projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+    position: relative;
+}
+
+.bloco-projetos div{
+    background-image: url(../../image/fundo-bloco.png);
+    width: 23%;
+    background-size: 400;
+    min-width: 250px;
+    height: 23vh;
+    background-color: var(--cor-fundo);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+    border: solid 3px var(--borda-imagem)
+
+}
+
+.bloco-projetos div:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.bloco-projetos div::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-50);
+    color: var(--cor-secundaria);
+    opacity: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.bloco-projetos div:hover::before {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.vida img{
+    width:126px;
+    height:110px;
+}
+
+.jogador img{
+    width:210px;
+    height:210px;
+}
+
+.inimigo img{
+    width:110px;
+    height:110px;
+}
+
+.morte img{
+    width:100px;
+    height:120px;
+}
+
+.portal img{
+    width:150px;
+    height:150px;
+}
+
+.tiro img{
+    width:200px;
+    height:200px;
+}

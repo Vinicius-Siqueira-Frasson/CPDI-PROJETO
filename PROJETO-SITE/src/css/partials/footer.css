@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@1,500&display=swap");
+
+
+footer {
+  width: 100%;
+  height: 10vh;
+  /* padding: 20px 10%; */
+  background-color: var(--cor-fundo);
+  font-family: "Rokkitt", serif;
+  bottom: 0;
+}
+
+.footer-copy {
+  width: 100%;
+  padding: 20px 0px;
+  color: var(--cor-secundaria);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-size: 100% 100%;
+  justify-content: center;
+}
+
+.footer-copy p {
+  font-family: "Rokkitt", serif;
+}
